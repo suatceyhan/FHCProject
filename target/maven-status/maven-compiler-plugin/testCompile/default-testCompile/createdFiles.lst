@@ -1,0 +1,17 @@
+stepdefinitions\US04_RoomCreationStepDefs.class
+pages\US06_UserListCreation.class
+stepdefinitions\US02_HomePageStepDefs.class
+pages\LoginPage.class
+stepdefinitions\Hooks.class
+stepdefinitions\US03_HotelCreationStepDefs.class
+runners\Runner.class
+stepdefinitions\US05_ReservationCreationStepDefs.class
+pages\US01_LoginPage.class
+utilities\Driver.class
+pages\US02_HomePage.class
+utilities\ConfigurationReader.class
+stepdefinitions\US06_UserListCreationStepDefs.class
+pages\US05_ReservationCreation.class
+pages\US04_RoomCreation.class
+stepdefinitions\US01_LoginPageStepDefs.class
+pages\US03_HotelCreation.class

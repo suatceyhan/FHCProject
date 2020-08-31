@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="libraryTable">
+    <library name="byte-buddy-1.8.15">
+      <CLASSES>
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/libs/byte-buddy-1.8.15.jar!/" />
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/libs/commons-exec-1.3.jar!/" />
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/libs/guava-25.0-jre.jar!/" />
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/libs/okhttp-3.11.0.jar!/" />
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/libs/okio-1.14.0.jar!/" />
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/client-combined-3.141.59.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://D:/IT/Selenium Dependencies/Libraries/client-combined-3.141.59-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</project>
