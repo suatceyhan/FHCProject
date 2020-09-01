@@ -29,7 +29,8 @@ public class US05_ReservationCreationStepDefs {
     {
         //method1 - to verify if addReservationButton is displayed.
         Assert.assertTrue(us05_reservationCreation.addReservationButton.isDisplayed());
-
+        us05_reservationCreation.addReservationButton.click();
+        /*
         //method2
         boolean present=false;
         try {
@@ -50,7 +51,7 @@ public class US05_ReservationCreationStepDefs {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
         boolean isTrue = wait.until(ExpectedConditions.textToBe(By.xpath("/html/body/div[3]/div[2]/div/div[3]/div/div/div[1]/div[1]"),"Create Hotelroomreservatıon"));
         Assert.assertTrue(isTrue);
-
+        */
 
     }
 
