@@ -34,7 +34,7 @@ public class US04_RoomCreation {
     public WebElement hotelRoomsLink;
 
     @FindBy(xpath = "//span[@class='hidden-480']")
-    public WebElement addHotelRommButton;
+    public WebElement addHotelRoomButton;
 
     @FindBy(className ="//a[@href='#']" )
     public WebElement listOfHoptelrooms;
