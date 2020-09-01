@@ -25,8 +25,9 @@ public class US04_RoomCreationStepDefs {
     }
 
     @Given("Check that the Add Hotelroom button works")
-    public void check_that_the_Add_Hotelroom_button_works() {
+    public void check_that_the_Add_Hotelroom_button_works() throws InterruptedException {
 
+        Thread.sleep(5000);
         us04_roomCreation.addHotelRoomButton.click();
 
     }
