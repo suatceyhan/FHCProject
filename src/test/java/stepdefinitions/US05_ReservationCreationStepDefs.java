@@ -94,7 +94,7 @@ public class US05_ReservationCreationStepDefs {
         us05_reservationCreation.notes.sendKeys("sea view");
         us05_reservationCreation.isApproved.isSelected();//click de olur
         us05_reservationCreation.isPaid.isSelected();
-        us05_reservationCreation.saveButton.click();
+        us05_reservationCreation.saveButton.submit();
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
