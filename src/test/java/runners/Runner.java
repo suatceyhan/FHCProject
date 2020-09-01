@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@fhcproject",
+        tags = "@userstory05", //"@fhcproject",
         dryRun = false
 )
 

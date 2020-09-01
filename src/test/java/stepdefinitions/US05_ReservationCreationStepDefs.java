@@ -75,8 +75,7 @@ public class US05_ReservationCreationStepDefs {
     }
 
     @Given("User enters invalid datas at Create Hotelroomreservation")
-    public void user_enters_invalid_datas_at_Create_Hotelroomreservation()
-    {
+    public void user_enters_invalid_datas_at_Create_Hotelroomreservation() throws InterruptedException {
         US05_ReservationCreation us05_reservationCreation=new US05_ReservationCreation();//clearDatas() method exists in Hooks Class
         //us05_reservationCreation.clearDatas();//verileri sildim
         Select idUserSelect=new Select(us05_reservationCreation.idUser);
@@ -94,8 +93,9 @@ public class US05_ReservationCreationStepDefs {
         us05_reservationCreation.notes.sendKeys("sea view");
         us05_reservationCreation.isApproved.isSelected();//click de olur
         us05_reservationCreation.isPaid.isSelected();
+        Thread.sleep(5000);
         us05_reservationCreation.saveButton.submit();
-        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Thread.sleep(5000);
     }
 
     @Then("LIST OF RESERVATION must be accessible")

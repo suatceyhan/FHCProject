@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="29.653">
-<testcase classname="FHCProject" name="US05 Reservation can be created" time="29.413">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.222">
+<testcase classname="FHCProject" name="US05 Reservation can be created" time="27.954">
 <system-out><![CDATA[Given ROOM RESERVATIONS page must be accessible.............................passed
 And ADD ROOM RESERVATION must be executable.................................passed
 And User enters valid datas at Create Hotelroomreservation..................passed
