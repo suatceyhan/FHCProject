@@ -17,8 +17,6 @@ public class US05_ReservationCreation
     @FindBy(id = "menuHotels")
     public WebElement hotelManagementButton;
 
-    //@FindBy(xpath = "//a[@href='/admin/RoomReservationAdmin']")
-    //@FindBy(linkText = "/admin/RoomReservationAdmin")
     @FindBy(partialLinkText = "Room reservations")
     public WebElement roomReservation;
 
