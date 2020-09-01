@@ -44,8 +44,8 @@ public class US05_ReservationCreationStepDefs {
         us05_reservationCreation.phone.sendKeys("1234567890");
         us05_reservationCreation.email.sendKeys("email@email.com");
         us05_reservationCreation.notes.sendKeys("sea view");
-        us05_reservationCreation.isApproved.click();
-        us05_reservationCreation.isPaid.click();
+        us05_reservationCreation.isApproved.isSelected();
+        us05_reservationCreation.isPaid.isSelected();
         us05_reservationCreation.saveButton.submit();
         Thread.sleep(5000);
         String message = us05_reservationCreation.successMessage.getText();
