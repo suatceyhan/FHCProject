@@ -60,7 +60,8 @@ public class US05_ReservationCreation
     @FindBy(xpath="//button[@class='btn btn-primary']")
     public WebElement alertOKButton;
 
-    @FindBy(name = "ContactEmail")
+    @FindBy(xpath = "//input[@name='ContactEmail']")
+    //@FindBy(name = "ContactEmail")
     public WebElement emailSearchBox;
 
     @FindBy(xpath = "//button[text()='Search']")
