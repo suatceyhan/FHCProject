@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="45.486">
-<testcase classname="FHCProject" name="US05 Reservation can be created" time="45.247">
-<system-out><![CDATA[Given ROOM RESERVATIONS page must be accessible.............................passed
-And ADD ROOM RESERVATION must be executable.................................passed
-And User enters valid datas at Create Hotelroomreservation..................passed
-And Alert Box must be accessible............................................passed
-And Clear invalid data......................................................passed
-And User enters invalid datas at Create Hotelroomreservation................passed
-Then LIST OF RESERVATION must be accessible.................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.428">
+<testcase classname="FHCProject" name="US04 Hotel Room must be created." time="44.125">
+<system-out><![CDATA[Given Check that the Hotel Rooms link works.................................passed
+And Check that the Add Hotelroom button works...............................passed
+And When all the information is entered and the save button is pressed, the message has been saved successfully..passed
+And When the information to be entered is not entered, it is seen that it does not register when the save button is pressed..passed
+Then Verify that the entered information is displayed in the Hotel Rooms list.passed
 ]]></system-out>
 </testcase>
 </testsuite>

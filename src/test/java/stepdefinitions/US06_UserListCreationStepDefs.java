@@ -110,6 +110,7 @@ public class US06_UserListCreationStepDefs {
         actions.sendKeys(Keys.HOME).perform();
         Thread.sleep(3000);
         uspage06.userListButton.click();
+        Thread.sleep(3000);
         uspage06.searchEmail.sendKeys("abc@gmail.com");
         uspage06.searchButton.click();
         Thread.sleep(3000);
