@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-01T02:57:16.384Z",
+        "start_timestamp": "2020-09-01T03:16:53.075Z",
         "before": [
           {
             "result": {
-              "duration": 11740000000,
+              "duration": 27746000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 32,
-        "name": "US04 Hotel Room must be created.",
+        "line": 40,
+        "name": "US05 Reservation can be created",
         "description": "",
-        "id": "fhcproject;us04-hotel-room-must-be-created.",
+        "id": "fhcproject;us05-reservation-can-be-created",
         "after": [
           {
             "result": {
-              "duration": 787000000,
+              "duration": 821000000,
               "status": "passed"
             },
             "match": {
@@ -35,61 +35,85 @@
         "steps": [
           {
             "result": {
-              "duration": 1080000000,
+              "duration": 1046000000,
               "status": "passed"
             },
-            "line": 33,
-            "name": "Check that the Hotel Rooms link works",
+            "line": 41,
+            "name": "ROOM RESERVATIONS page must be accessible",
             "match": {
-              "location": "stepdefinitions.US04_RoomCreationStepDefs.check_that_the_Hotel_Rooms_link_works()"
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.room_RESERVATIONS_page_must_be_accessible()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 682000000,
+              "duration": 609000000,
               "status": "passed"
             },
-            "line": 34,
-            "name": "Check that the Add Hotelroom button works",
+            "line": 42,
+            "name": "ADD ROOM RESERVATION must be executable",
             "match": {
-              "location": "stepdefinitions.US04_RoomCreationStepDefs.check_that_the_Add_Hotelroom_button_works()"
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.add_ROOM_RESERVATION_must_be_executable()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 13067000000,
+              "duration": 6464000000,
               "status": "passed"
             },
-            "line": 35,
-            "name": "When all the information is entered and the save button is pressed, the message has been saved successfully.",
+            "line": 43,
+            "name": "User enters valid datas at Create Hotelroomreservation",
             "match": {
-              "location": "stepdefinitions.US04_RoomCreationStepDefs.when_all_the_information_is_entered_and_the_save_button_is_pressed_the_message_has_been_saved_successfully()"
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.user_enters_valid_datas_at_Create_Hotelroomreservation()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9614000000,
+              "duration": 185000000,
               "status": "passed"
             },
-            "line": 36,
-            "name": "When the information to be entered is not entered, it is seen that it does not register when the save button is pressed.",
+            "line": 44,
+            "name": "Alert Box must be accessible",
             "match": {
-              "location": "stepdefinitions.US04_RoomCreationStepDefs.when_the_information_to_be_entered_is_not_entered_it_is_seen_that_it_does_not_register_when_the_save_button_is_pressed()"
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.alert_Box_must_be_accessible()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 7225000000,
+              "duration": 394000000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "Verify that the entered information is displayed in the Hotel Rooms list",
+            "line": 45,
+            "name": "Clear invalid data",
             "match": {
-              "location": "stepdefinitions.US04_RoomCreationStepDefs.verify_that_the_entered_information_is_displayed_in_the_hotel_rooms_list()"
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.clear_invalid_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1091000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User enters invalid datas at Create Hotelroomreservation",
+            "match": {
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.user_enters_invalid_datas_at_Create_Hotelroomreservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6794000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "LIST OF RESERVATION must be accessible",
+            "match": {
+              "location": "stepdefinitions.US05_ReservationCreationStepDefs.list_OF_RESERVATION_must_be_accessible()"
             },
             "keyword": "Then "
           }
@@ -99,7 +123,7 @@
             "name": "@fhcproject"
           },
           {
-            "name": "@userstory04"
+            "name": "@userstory05"
           }
         ]
       }
