@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-09-01T02:32:12.191Z",
+        "start_timestamp": "2020-09-01T02:57:16.384Z",
         "before": [
           {
             "result": {
-              "duration": 22401000000,
+              "duration": 11740000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 50,
-        "name": "US06 User List Creation",
+        "line": 32,
+        "name": "US04 Hotel Room must be created.",
         "description": "",
-        "id": "fhcproject;us06-user-list-creation",
+        "id": "fhcproject;us04-hotel-room-must-be-created.",
         "after": [
           {
             "result": {
-              "duration": 783000000,
+              "duration": 787000000,
               "status": "passed"
             },
             "match": {
@@ -35,86 +35,63 @@
         "steps": [
           {
             "result": {
-              "duration": 28000000,
+              "duration": 1080000000,
               "status": "passed"
             },
-            "line": 51,
-            "name": "user go to page",
+            "line": 33,
+            "name": "Check that the Hotel Rooms link works",
             "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.user_go_to_page()"
+              "location": "stepdefinitions.US04_RoomCreationStepDefs.check_that_the_Hotel_Rooms_link_works()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 682000000,
               "status": "passed"
             },
-            "line": 52,
-            "name": "USER LIST page must be accessible.",
+            "line": 34,
+            "name": "Check that the Add Hotelroom button works",
             "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.user_LIST_page_must_be_accessible()"
+              "location": "stepdefinitions.US04_RoomCreationStepDefs.check_that_the_Add_Hotelroom_button_works()"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 56000000,
+              "duration": 13067000000,
               "status": "passed"
             },
-            "line": 53,
-            "name": "ADD USER button must be executable",
+            "line": 35,
+            "name": "When all the information is entered and the save button is pressed, the message has been saved successfully.",
             "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.add_USER_button_must_be_executable()"
+              "location": "stepdefinitions.US04_RoomCreationStepDefs.when_all_the_information_is_entered_and_the_save_button_is_pressed_the_message_has_been_saved_successfully()"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2615000000,
+              "duration": 9614000000,
               "status": "passed"
             },
-            "line": 54,
-            "name": "An User can not be added if all required datas is not entered validly.",
+            "line": 36,
+            "name": "When the information to be entered is not entered, it is seen that it does not register when the save button is pressed.",
             "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.an_User_can_not_be_added_if_all_required_datas_is_not_entered_validly()"
+              "location": "stepdefinitions.US04_RoomCreationStepDefs.when_the_information_to_be_entered_is_not_entered_it_is_seen_that_it_does_not_register_when_the_save_button_is_pressed()"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 4406000000,
+              "duration": 7225000000,
               "status": "passed"
             },
-            "line": 55,
-            "name": "An User can be added if all required datas entered validly.",
+            "line": 37,
+            "name": "Verify that the entered information is displayed in the Hotel Rooms list",
             "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.an_User_can_be_added_if_all_required_datas_entered_validly()"
+              "location": "stepdefinitions.US04_RoomCreationStepDefs.verify_that_the_entered_information_is_displayed_in_the_hotel_rooms_list()"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 119000000,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "Check if the Alert Box works.",
-            "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.check_if_the_Alert_Box_works()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7756000000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "Check if added users can be displayed on User List Table.",
-            "match": {
-              "location": "stepdefinitions.US06_UserListCreationStepDefs.check_if_added_users_can_be_displayed_on_User_List_Table()"
-            },
-            "keyword": "Given "
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -122,7 +99,7 @@
             "name": "@fhcproject"
           },
           {
-            "name": "@userstory06"
+            "name": "@userstory04"
           }
         ]
       }

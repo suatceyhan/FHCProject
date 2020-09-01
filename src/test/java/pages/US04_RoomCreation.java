@@ -11,15 +11,6 @@ public class US04_RoomCreation {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(id = "UserName")
-    public WebElement userName;
-
-    @FindBy(id = "Password")
-    public WebElement password;
-
-    @FindBy(id = "btnSubmit")
-    public WebElement loginButton;
-
     @FindBy(id = "(//span[@class='title'])[1]")
     public WebElement systemManagement;
 
@@ -33,7 +24,8 @@ public class US04_RoomCreation {
     //@FindBy(xpath = "//a[@href='/admin/HotelRoomAdmin']")
     public WebElement hotelRoomsLink;
 
-    @FindBy(xpath = "//span[@class='hidden-480']")
+    //@FindBy(xpath = "//span[@class='hidden-480']")
+    @FindBy(xpath = "//span[text()='Add Hotelroom ']")
     public WebElement addHotelRoomButton;
 
     @FindBy(className ="//a[@href='#']" )
