@@ -2,12 +2,8 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.US05_ReservationCreation;
 import utilities.Driver;
@@ -30,29 +26,6 @@ public class US05_ReservationCreationStepDefs {
         //method1 - to verify if addReservationButton is displayed.
         Assert.assertTrue(us05_reservationCreation.addReservationButton.isDisplayed());
         us05_reservationCreation.addReservationButton.click();
-        /*
-        //method2
-        boolean present=false;
-        try {
-            Driver.getDriver().findElement(By.xpath("//a[@href='/admin/RoomReservationAdmin/Create']"));
-            present = true;
-        }
-        catch (NoSuchElementException e) {
-            present = false;
-        }
-        Assert.assertTrue(present);
-
-        //method3 - ternary
-        System.out.println(Driver.getDriver().findElements( By.xpath("//a[@href='/admin/RoomReservationAdmin/Create']")).size() != 0 ? true : false);
-
-        us05_reservationCreation.addReservationButton.sendKeys(Keys.ENTER);
-        //us05_reservationCreation.addReservationButton.sendKeys(Keys.RETURN);
-
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        boolean isTrue = wait.until(ExpectedConditions.textToBe(By.xpath("/html/body/div[3]/div[2]/div/div[3]/div/div/div[1]/div[1]"),"Create Hotelroomreservatıon"));
-        Assert.assertTrue(isTrue);
-        */
-
     }
 
     @Given("User enters valid datas at Create Hotelroomreservation")
@@ -75,10 +48,8 @@ public class US05_ReservationCreationStepDefs {
         us05_reservationCreation.isPaid.click();
         us05_reservationCreation.saveButton.submit();
         Thread.sleep(5000);
-        //Assert.assertTrue(fhcRezervasyonPage.successMessage.isDisplayed());  //1.
         String message = us05_reservationCreation.successMessage.getText();
         Assert.assertTrue(message.equals("RoomReservation was inserted successfully"));  //2.
-        //System.out.println(Driver.getDriver().switchTo().alert().getText());//alert mesajı //3. (error veriyor)
     }
 
     @Given("Alert Box must be accessible")
@@ -86,11 +57,7 @@ public class US05_ReservationCreationStepDefs {
     {
         //method1
         //Driver.getDriver().switchTo().alert().accept();//alertteki ok tusunu clicklemek icin(error veriyor)
-        //method2
-        Driver.getDriver().findElement(By.xpath("//button[@class='btn btn-primary']")).click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        boolean isTrue = wait.until(ExpectedConditions.textToBe(By.xpath("/html/body/div[3]/div[2]/div/div[3]/div/div/div[1]/div[1]"),"Create Hotelroomreservatıon"));
-        Assert.assertTrue(isTrue);
+        us05_reservationCreation.alertOKButton.click();
     }
 
     @Given("Clear invalid data")
