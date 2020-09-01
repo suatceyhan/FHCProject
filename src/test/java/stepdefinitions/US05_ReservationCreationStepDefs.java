@@ -5,14 +5,11 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import pages.US01_LoginPage;
 import pages.US05_ReservationCreation;
-import utilities.ConfigurationReader;
 import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
@@ -135,8 +132,6 @@ public class US05_ReservationCreationStepDefs {
 
     @Then("LIST OF RESERVATION must be accessible")
     public void list_OF_RESERVATION_must_be_accessible() throws InterruptedException {
-        //Driver.getDriver().navigate().to(ConfigurationReader.getProp("fhcReservationTable"));
-        us05_reservationCreation.hotelManagementButton.click();
         us05_reservationCreation.roomReservation.click();
         us05_reservationCreation.emailSearchBox.sendKeys("email@email.com");
         us05_reservationCreation.searchButton.click();

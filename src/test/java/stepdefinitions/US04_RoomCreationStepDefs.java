@@ -1,17 +1,14 @@
 package stepdefinitions;
 
-import gherkin.lexer.Th;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.US04_RoomCreation;
 import utilities.Driver;
 
@@ -30,7 +27,7 @@ public class US04_RoomCreationStepDefs {
     @Given("Check that the Add Hotelroom button works")
     public void check_that_the_Add_Hotelroom_button_works() {
 
-        us04_roomCreation.addHotelRommButton.click();
+        us04_roomCreation.addHotelRoomButton.click();
 
     }
 
